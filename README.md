@@ -104,7 +104,7 @@ When incorrectly flagging a legitimate employer's posting is unacceptable (e.g.,
 - **Coverage:** 42.2% of fraudulent postings caught — the lowest recall, meaning most scams slip through
 - **Real-world impact:** Best suited as a **high-confidence auto-removal layer** where flagged postings are taken down immediately without human review, while unflagged postings proceed to secondary screening
 - **Speed advantage:** Trains in 22 seconds — the fastest tuned model, roughly 6× faster than MLP
-- **⚠️ Caveat:** 100% test-set precision may reflect overfitting to narrow decision boundaries rather than true generalization — the model likely memorized a small subset of obvious fraud patterns while ignoring subtler ones. Cross-validation PR-AUC (0.895) suggests real-world precision would be lower. This model should be validated on held-out or production data before trusting its zero-false-positive claim.
+- **Caveat:** 100% test-set precision may reflect overfitting to narrow decision boundaries rather than true generalization — the model likely memorized a small subset of obvious fraud patterns while ignoring subtler ones. Cross-validation PR-AUC (0.895) suggests real-world precision would be lower. This model should be validated on held-out or production data.
 
 **3. Lightweight Deployment / Real-Time Screening → Use Linear SVM + SMOTE**
 
