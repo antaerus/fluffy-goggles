@@ -40,6 +40,24 @@ The following metrics were employed to compare the models:
 - Precision
 - Confusion Matrix
 
+## Repository Structure
+
+```
+├── data/
+│   ├── fake_job_postings.csv          # Original EMSCAD dataset (17,880 job postings)
+│   └── tuned_models.csv               # Pre-saved RandomizedSearchCV results for tuned models (saved to avoid retraining)
+│
+├── helpers/
+│   ├── __init__.py
+│   └── salary_features.py             # Shared utility functions used across both EDA and evaluation notebooks
+│
+├── images/                            # All saved visualizations referenced in notebooks and README
+│
+├── exploratory_data_analysis.ipynb    # EDA, feature engineering, and baseline modeling (Random Forest classifier)
+├── capstone_evaluation.ipynb          # Model comparison, hyperparameter tuning, final model selection, and feature importances
+└── README.md
+```
+
 ## Findings & Insight
 
 ![Final Model Comparison](/images/final_tuned_models_model_comparison.png)
